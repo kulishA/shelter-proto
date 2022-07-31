@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package sheltes_map;
+
+option go_package = "/proto";
+
+message ShelterRequest {
+  float latitude = 1;
+  float longitude = 2;
+}
+
+message ShelterResponse {
+  float latitude = 1;
+  float longitude = 2;
+}
+
+service ShelterApi {
+  rpc GetFirstNearbyShelter(ShelterRequest) returns (ShelterResponse);
+}
