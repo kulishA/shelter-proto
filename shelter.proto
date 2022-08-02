@@ -10,8 +10,17 @@ message ShelterRequest {
 }
 
 message ShelterResponse {
-  float latitude = 1;
-  float longitude = 2;
+  string city = 1;
+  string address = 2;
+  string address_number = 3;
+  float latitude = 4;
+  float longitude = 5;
+  string closer_type = 6;
+  string shelter_type = 7;
+  string building_type = 8;
+  string owner = 9;
+  string phone = 10;
+  string ramp = 11;
 }
 
 service ShelterApi {
