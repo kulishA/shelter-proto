@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package location;
+
+option go_package = "/proto";
+
+message HeatingPointResponse {
+  string city = 1;
+  string address = 2;
+  string District = 3;
+  float latitude = 4;
+  float longitude = 5;
+  string closer_type = 6;
+  string start_date = 7;
+  string capacity = 8;
+  string mobile_phone = 9;
+  string responsible_person = 10;
+  string phone = 11;
+  bool kitchen_room = 12;
+  bool mother_room = 13;
+  bool disabilities_room = 14;
+}

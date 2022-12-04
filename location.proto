@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+import "shelter.proto";
+import "heating_point.proto";
+import "common.proto";
+
+package location;
+
+option go_package = "/proto";
+
+
+service LocationApi {
+  rpc GetFirstNearbyShelter(LocationRequest) returns (ShelterResponse);
+  rpc GetFirstNearbyHeatingPoint(LocationRequest) returns (HeatingPointResponse);
+}

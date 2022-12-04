@@ -1,13 +1,8 @@
 syntax = "proto3";
 
-package sheltes_map;
+package location;
 
 option go_package = "/proto";
-
-message ShelterRequest {
-  float latitude = 1;
-  float longitude = 2;
-}
 
 message ShelterResponse {
   string city = 1;
@@ -21,8 +16,4 @@ message ShelterResponse {
   string owner = 9;
   string phone = 10;
   string ramp = 11;
-}
-
-service ShelterApi {
-  rpc GetFirstNearbyShelter(ShelterRequest) returns (ShelterResponse);
 }

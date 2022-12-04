@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package location;
+
+option go_package = "/proto";
+
+message LocationRequest {
+  float latitude = 1;
+  float longitude = 2;
+}
