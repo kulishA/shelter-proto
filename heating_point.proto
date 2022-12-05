@@ -12,7 +12,7 @@ message HeatingPointResponse {
   float longitude = 5;
   string closer_type = 6;
   string start_date = 7;
-  string capacity = 8;
+  int64 capacity = 8;
   string mobile_phone = 9;
   string responsible_person = 10;
   string phone = 11;
